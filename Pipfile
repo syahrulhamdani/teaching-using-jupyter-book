@@ -7,6 +7,7 @@ name = "pypi"
 jupyter-book = "~=0.12.1"
 
 [dev-packages]
+jupyterlab = "~=3.2.4"
 
 [requires]
 python_version = "3.9"
