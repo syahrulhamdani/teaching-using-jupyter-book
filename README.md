@@ -35,7 +35,7 @@ git clone https://github.com/syahrulhamdani/teaching-using-jupyter-book.git
 PIPENV_VENV_IN_PROJECT=1 pipenv install --dev --deploy
 ```
 
-	This will install all packages including dev packages and sync with `Pipfile.lock`. More detail about this [here](https://pipenv-fork.readthedocs.io/en/latest/advanced.html#using-pipenv-for-deployments).
+This will install all packages including dev packages and sync with `Pipfile.lock`. More detail about this [here](https://pipenv-fork.readthedocs.io/en/latest/advanced.html#using-pipenv-for-deployments).
 
 * To build the book, run below command.
 
@@ -43,7 +43,7 @@ PIPENV_VENV_IN_PROJECT=1 pipenv install --dev --deploy
 jb build book
 ```
 
-	This will generate a `_build` directory where html files exist.
+This will generate a `_build` directory where html files exist.
 
 ---
 
