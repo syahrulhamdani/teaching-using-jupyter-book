@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "34099826fd05fbf0a43d98ad13a56539b8dc90a3fd59485b89dadfd050dcd6e7"
+            "sha256": "bc03f3e74b5229729816b3d18a283705ba4138c435c9257a583a35d29f33a5bd"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -1044,11 +1044,11 @@
         },
         "sphinxcontrib-bibtex": {
             "hashes": [
-                "sha256:00d474092e04b1d941e645cf6c027632a975cd0b9337cf47d379f63a5928f334",
-                "sha256:38e8e9e1d450b50f33b2e42855da66e7c71e7ea533ca2a381b6d8d6314975a36"
+                "sha256:7500843e154d76983c23bca5ca7380965e0725c46b8f484c1322d0b58a6ce3b2",
+                "sha256:f35c1a75826c1b0dd1c680bb144c774630dcf5f78f1501a8c68cdfa8381a4e87"
             ],
-            "markers": "python_version >= '3.6'",
-            "version": "==2.2.1"
+            "index": "pypi",
+            "version": "==2.2.0"
         },
         "sphinxcontrib-devhelp": {
             "hashes": [
