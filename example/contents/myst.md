@@ -3,7 +3,7 @@
 MyST (Markedly Structured Text) markdown is a superset of CommonMark Markdown which extend the flavor of Markdown with rich features. It's inspired by RMarkdown.
 
 ```{note}
-For those who are familiar with Sphinx, MyST is CommonMark + Markdown extensions + Sphinx roles andirectives.
+For those who are familiar with Sphinx, MyST is CommonMark + Markdown extensions + Sphinx roles and irectives.
 ```
 
 
@@ -74,7 +74,7 @@ To use roles, we use below syntax.
 A content {rolename}`of roles`.
 ```
 
-For example, we can use roles to refer and provide a link to go to certain file. For example, the syntax {doc}`../references` will result in: {doc}`../references`.
+For example, we can use roles to refer and provide a link to go to certain file. For example, the syntax `` {doc}`../references` `` will result in: {doc}`../references`.
 
 ```{admonition} Directives and Roles Availability
 * Any directive/role that is available in Sphinx
