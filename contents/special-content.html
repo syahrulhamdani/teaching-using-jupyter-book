@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Contents in Jupyter Book &#8212; Intro to Jupyter Book</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="References" href="../references.html" />
+    <link rel="prev" title="MyST Markdown" href="myst.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Intro to Jupyter Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../introduction/index.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/intro-jb.html">
+     Introduction to Jupyter Book
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Special Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Contents in Jupyter Book
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="myst.html">
+     MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Special Contents in Jupyter Book
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/contents/special-content.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/syahrulhamdani/teaching-using-jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notes-warnings-and-other-adminitions">
+   Notes, Warnings, and Other Adminitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#panels">
+   Panels
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quotations">
+   Quotations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tabbed-content">
+   Tabbed Content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#images-and-figures">
+   Images and Figures
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="special-contents-in-jupyter-book">
+<h1>Special Contents in Jupyter Book<a class="headerlink" href="#special-contents-in-jupyter-book" title="Permalink to this headline">¶</a></h1>
+<p><span id="id1">[<a class="reference internal" href="../references.html#id3">Community, 2021</a>]</span> A common use of directives and roles is to create <strong>special contents</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All of below contents are adapted from <a class="reference external" href="https://jupyterbook.org/content/index.html">Jupyter Book</a> documentation <span id="id2">[<a class="reference internal" href="../references.html#id3">Community, 2021</a>]</span>.</p>
+</div>
+<div class="section" id="notes-warnings-and-other-adminitions">
+<h2>Notes, Warnings, and Other Adminitions<a class="headerlink" href="#notes-warnings-and-other-adminitions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Notes</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
+This will be a note
+```
+</pre></div>
+</div>
+<p>will render:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This will be a note</p>
+</div>
+<ul class="simple">
+<li><p>Warnings</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{warning}
+There&#39;s a warning!
+```
+</pre></div>
+</div>
+<p>will render:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There’s a warning!</p>
+</div>
+<ul class="simple">
+<li><p>Error</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{error}
+Found some errors
+```
+</pre></div>
+</div>
+<p>will render:</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Found some errors</p>
+</div>
+<ul class="simple">
+<li><p>Custom Admonition</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} This is an admonition
+here&#39;s the content inside an admonition
+```
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>For a complete list, see the <a class="reference external" href="https://sphinx-book-theme.readthedocs.io/en/latest/reference/kitchen-sink/paragraph-markup.html#admonitions">sphinx-book-theme documentation</a>.</p>
+</div>
+</div>
+<div class="section" id="panels">
+<h2>Panels<a class="headerlink" href="#panels" title="Permalink to this headline">¶</a></h2>
+<p>Panels help us to organize chunks of content into flexible containers on page in a card-like layout.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>Supervised</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Type of machine learning where the data have a target variable or the ground truth.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>Unsupervised</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Type of machine learning where the data doesn’t have a target variable.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="quotations">
+<h2>Quotations<a class="headerlink" href="#quotations" title="Permalink to this headline">¶</a></h2>
+<p>If you’ve used Jupyter Notebook/Lab, you may have used a quotation with syntax <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>. Jupyter Book also has the same quotation.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Source</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
+&gt; A quotation just like notebook and lab.
+```
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Result</p>
+</div>
+<div class="card-body docutils">
+<blockquote>
+<div><p class="card-text">A quotation just like notebook and lab.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>The result will look like this:</p>
+<blockquote>
+<div><p>A quotation just like notebook and lab</p>
+<p>from Jupyter Book</p>
+</div></blockquote>
+<p>Moreover, Jupyter Book also provide a medium-like quotation using a directive <code class="docutils literal notranslate"><span class="pre">{epigraphh}</span></code>.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Source</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{epigraph}
+A medium-like quotation which is awesome!
+```
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Result</p>
+</div>
+<div class="card-body docutils">
+<blockquote class="epigraph">
+<div><p class="card-text">A quotation just like notebook and lab.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>The result will look like this:</p>
+<blockquote class="epigraph">
+<div><p>A quotation just like notebook and lab.</p>
+<p>from Jupyter Book</p>
+</div></blockquote>
+<p>or you can have something like this:</p>
+<blockquote class="epigraph">
+<div><p>A quotation just like notebook and lab.</p>
+<p class="attribution">—Jupyter Book</p>
+</div></blockquote>
+<p>The above <code class="docutils literal notranslate"><span class="pre">epigraph</span></code> is generated using below syntax.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{epigraph}
+A quotation just like notebook and lab.
+
+-- Jupyter Book
+```
+</pre></div>
+</div>
+</div>
+<div class="section" id="tabbed-content">
+<h2>Tabbed Content<a class="headerlink" href="#tabbed-content" title="Permalink to this headline">¶</a></h2>
+<p>This is, for me, is the best feature in Jupyter Book. We can create a tabbed content when we want to, for example, compare codes using different library/language.
+This can be done using directive <code class="docutils literal notranslate"><span class="pre">{tabbed}</span></code>.</p>
+<p>Below syntax,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tabbed} OpenCV
+```python
+import cv2
+
+image = cv2.imread(&quot;path/to/image&quot;)
+```
+````
+
+````{tabbed} Pillow
+```python
+from PIL import Image
+
+image = Image.open(&quot;path/to/image&quot;)
+```
+````
+</pre></div>
+</div>
+<p>will result in</p>
+<div class="tabbed-set docutils">
+<input checked="checked" id="a205aaf1-53e1-4cad-b391-b0bf2c4f2c67" name="fb2b075b-8067-4843-9c46-1c338008678c" type="radio">
+</input><label class="tabbed-label" for="a205aaf1-53e1-4cad-b391-b0bf2c4f2c67">
+OpenCV</label><div class="tabbed-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;path/to/image&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<input id="ba6bd6cc-710a-4c17-b0fb-46f4bf32ad80" name="fb2b075b-8067-4843-9c46-1c338008678c" type="radio">
+</input><label class="tabbed-label" for="ba6bd6cc-710a-4c17-b0fb-46f4bf32ad80">
+Pillow</label><div class="tabbed-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;path/to/image&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="images-and-figures">
+<h2>Images and Figures<a class="headerlink" href="#images-and-figures" title="Permalink to this headline">¶</a></h2>
+<p>We can still use the usual syntax to include image like <code class="docutils literal notranslate"><span class="pre">![](../assets/images/pycon-bright-1.png)</span></code>, which will render to</p>
+<p><img alt="" src="../_images/pycon-bright-1.png" /></p>
+<p>Another syntax we can use to include images is to use <code class="docutils literal notranslate"><span class="pre">{image}</span></code> directive. With this, we can have more flexibility in configuring the width, alignment, etc.</p>
+<a class="reference internal image-reference" href="../_images/pycon-bright-1.png"><img alt="PyCon Logo" class="align-center" src="../_images/pycon-bright-1.png" style="width: 50%;" /></a>
+<p>The above image is rendered from this syntax.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{image}
+:alt: PyCon Logo
+:width: 50%
+:align: center
+```
+</pre></div>
+</div>
+<p>Now, Jupyter Book through MyST Markdown include <code class="docutils literal notranslate"><span class="pre">{figures}</span></code> directive. Figures are just like images, except they are easier to reference and include an image caption with numbering.</p>
+<p>Below figure,</p>
+<div class="figure align-center" id="pycon-bright-fig">
+<a class="reference internal image-reference" href="../_images/pycon-bright-1.png"><img alt="PyCon Logo" src="../_images/pycon-bright-1.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">A PyCon Indonesia 2021 logo.</span><a class="headerlink" href="#pycon-bright-fig" title="Permalink to this image">¶</a></p>
+</div>
+<p>is generated using below syntax</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{figure}  ../assets/images/pycon-bright-1.png
+:alt: PyCon Logo
+:name: pycon-bright-fig
+:width: 50%
+:align: center
+
+A PyCon Indonesia 2021 logo.
+```
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">name</span></code> key in the directive <code class="docutils literal notranslate"><span class="pre">{figure}</span></code> is used for reference. So, we can use <code class="docutils literal notranslate"><span class="pre">{ref}`pycon-bright-fig`</span></code> to go back to the image: <a class="reference internal" href="#pycon-bright-fig"><span class="std std-ref">A PyCon Indonesia 2021 logo.</span></a>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./contents"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="myst.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">MyST Markdown</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../references.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">References</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Syahrul Hamdani<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
